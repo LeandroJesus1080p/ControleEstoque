@@ -1,0 +1,310 @@
+<div class="px-6 py-6 w-full max-w-full relative min-h-full">
+  <!-- Header -->
+  <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+    <div>
+      <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Lista de Produtos</h1>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Dashboard / Lista de Produtos</p>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-gray-100 dark:border-slate-700 overflow-hidden transition-colors duration-200 relative">
+    
+
+
+    <!-- Table -->
+    <div class="overflow-x-auto w-full">
+      <table class="w-full text-left whitespace-nowrap min-w-max">
+        <thead>
+          <tr class="border-b border-gray-100 dark:border-slate-700 text-[13px] text-gray-800 dark:text-slate-200 font-bold bg-gray-50/50 dark:bg-slate-800">
+            <th class="py-4 px-4 pl-6 w-12 font-bold">
+              <input type="checkbox" class="rounded border-gray-300 dark:border-slate-600 dark:bg-slate-700 text-blue-600 focus:ring-blue-600 w-4 h-4 cursor-pointer transition-colors">
+            </th>
+            <th class="py-4 px-4 font-bold">S.L</th>
+            
+            <!-- Nome Filter -->
+            <th class="py-4 px-4 font-bold relative group cursor-pointer select-none" (click)="toggleFilter('nome', $event)">
+              <div class="flex items-center gap-1.5 hover:text-blue-500 transition-colors">
+                Nome
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" /></svg>
+              </div>
+              @if (activeFilter() === 'nome') {
+                <div class="absolute z-50 top-full left-0 mt-2 w-56 bg-white dark:bg-slate-800 rounded-lg shadow-xl shadow-blue-500/10 border border-gray-100 dark:border-slate-600 p-3 transform transition-all cursor-auto" (click)="stopPropagation($event)">
+                  <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Filtrar por Nome</label>
+                  <input type="text" class="w-full text-sm px-3 py-2 border border-gray-200 dark:border-slate-600 rounded-md bg-gray-50 dark:bg-slate-700 text-gray-800 dark:text-gray-100 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 shadow-inner" placeholder="Digite o nome..." autofocus>
+                  <div class="flex justify-end mt-3 gap-2">
+                     <button class="px-3 py-1.5 text-xs font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors" (click)="activeFilter.set(null); stopPropagation($event)">Cancelar</button>
+                     <button class="px-3 py-1.5 text-xs font-medium bg-blue-500 hover:bg-blue-600 text-white rounded-md transition-colors shadow-sm" (click)="activeFilter.set(null); stopPropagation($event)">Aplicar</button>
+                  </div>
+                </div>
+              }
+            </th>
+            
+            <!-- Categoria Filter -->
+            <th class="py-4 px-4 font-bold relative group cursor-pointer select-none" (click)="toggleFilter('categoria', $event)">
+              <div class="flex items-center gap-1.5 hover:text-blue-500 transition-colors">
+                Categoria
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" /></svg>
+              </div>
+              @if (activeFilter() === 'categoria') {
+                <div class="absolute z-50 top-full left-0 mt-2 w-56 bg-white dark:bg-slate-800 rounded-lg shadow-xl shadow-blue-500/10 border border-gray-100 dark:border-slate-600 p-3 transform transition-all cursor-auto" (click)="stopPropagation($event)">
+                  <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Filtrar por Categoria</label>
+                  <input type="text" class="w-full text-sm px-3 py-2 border border-gray-200 dark:border-slate-600 rounded-md bg-gray-50 dark:bg-slate-700 text-gray-800 dark:text-gray-100 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 shadow-inner" placeholder="Nome da categoria..." autofocus>
+                  <div class="flex justify-end mt-3 gap-2">
+                     <button class="px-3 py-1.5 text-xs font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors" (click)="activeFilter.set(null); stopPropagation($event)">Cancelar</button>
+                     <button class="px-3 py-1.5 text-xs font-medium bg-blue-500 hover:bg-blue-600 text-white rounded-md transition-colors shadow-sm" (click)="activeFilter.set(null); stopPropagation($event)">Aplicar</button>
+                  </div>
+                </div>
+              }
+            </th>
+            
+            <th class="py-4 px-4 font-bold">Quantidade</th>
+            <th class="py-4 px-4 font-bold">Preço</th>
+            <th class="py-4 px-4 font-bold">Data Cad.</th>
+            
+            <!-- Status Filter -->
+            <th class="py-4 px-4 font-bold text-center relative group cursor-pointer select-none" (click)="toggleFilter('status', $event)">
+              <div class="flex items-center justify-center gap-1.5 hover:text-blue-500 transition-colors">
+                Status
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" /></svg>
+              </div>
+              @if (activeFilter() === 'status') {
+                <div class="absolute z-50 top-full left-1/2 -translate-x-1/2 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl shadow-blue-500/10 border border-gray-100 dark:border-slate-600 p-2 transform transition-all cursor-auto" (click)="stopPropagation($event)">
+                  <div class="flex flex-col gap-1 text-left">
+                    <label class="px-2 py-1 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1">Filtrar por Status</label>
+                    <label class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 dark:hover:bg-slate-700 rounded-md cursor-pointer transition-colors group/item relative">
+                      <input type="checkbox" checked class="rounded border-gray-300 dark:border-slate-600 dark:bg-slate-700 text-blue-500 focus:ring-blue-500 w-4 h-4 cursor-pointer">
+                      <span class="text-sm text-gray-700 dark:text-gray-200 font-medium group-hover/item:text-blue-600 dark:group-hover/item:text-blue-400">Ativo</span>
+                    </label>
+                    <label class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 dark:hover:bg-slate-700 rounded-md cursor-pointer transition-colors group/item relative">
+                      <input type="checkbox" checked class="rounded border-gray-300 dark:border-slate-600 dark:bg-slate-700 text-blue-500 focus:ring-blue-500 w-4 h-4 cursor-pointer">
+                      <span class="text-sm text-gray-700 dark:text-gray-200 font-medium group-hover/item:text-blue-600 dark:group-hover/item:text-blue-400">Inativo</span>
+                    </label>
+                    <div class="h-px bg-gray-100 dark:bg-slate-700 my-1"></div>
+                    <button class="w-full mt-1 px-3 py-1.5 text-xs font-medium bg-blue-50 text-blue-600 dark:bg-blue-500/10 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-500/20 rounded-md transition-colors" (click)="activeFilter.set(null); stopPropagation($event)">Aplicar Filtro</button>
+                  </div>
+                </div>
+              }
+            </th>
+            <th class="py-4 px-4 pr-6 font-bold text-right">Action</th>
+          </tr>
+        </thead>
+        <tbody class="text-[13px] text-gray-600 dark:text-slate-300">
+          @for (produto of produtos(); track produto.id; let i = $index) {
+            <tr class="border-b border-gray-50 dark:border-slate-700/50 hover:bg-blue-50/40 dark:hover:bg-slate-700/50 transition-colors duration-200 group cursor-pointer" (click)="openEditDialog(produto, $event)">
+              <td class="py-3 px-4 pl-6">
+                <input type="checkbox" class="rounded border-gray-300 dark:border-slate-600 dark:bg-slate-700 text-blue-600 focus:ring-blue-600 w-4 h-4 cursor-pointer transition-colors opacity-0 group-hover:opacity-100 sm:opacity-100">
+              </td>
+              <td class="py-3 px-4 text-gray-500 dark:text-slate-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{{ i < 9 ? '0' + (i + 1) : i + 1 }}</td>
+              <td class="py-3 px-4 transform group-hover:translate-x-1 transition-transform duration-300">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/40 dark:to-indigo-900/40 border border-blue-200 dark:border-blue-800/50 flex items-center justify-center shrink-0 shadow-sm group-hover:shadow group-hover:scale-110 transition-all duration-300">
+                    <span class="font-bold text-blue-700 dark:text-blue-400 text-xs">{{ produto.nome.substring(0, 1) }}</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="font-semibold text-gray-800 dark:text-slate-200 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">{{ produto.nome }}</span>
+                    <span class="text-xs text-gray-400 dark:text-slate-500">ID: {{ produto.id }}</span>
+                  </div>
+                </div>
+              </td>
+              <td class="py-3 px-4">{{ produto.categoria?.nome || 'Sem Categoria' }}</td>
+              <td class="py-3 px-4">
+                <span class="bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-300 font-mono text-xs px-2 py-1 rounded-md">{{ produto.quantidadeEstoque }} unid.</span>
+              </td>
+              <td class="py-3 px-4 font-mono">R$ {{ produto.preco.toFixed(2).replace('.', ',') }}</td>
+              <td class="py-3 px-4 text-xs text-gray-500 dark:text-gray-400 font-mono">{{ produto.dataCadastro | date:'dd/MM/yyyy' }}</td>
+              <td class="py-3 px-4 text-center">
+                @if (produto.ativo) {
+                  <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 font-medium text-xs border border-green-200 dark:border-green-800 shadow-sm">
+                    Active
+                  </span>
+                } @else {
+                  <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 font-medium text-xs border border-red-200 dark:border-red-800 shadow-sm">
+                    Inactive
+                  </span>
+                }
+              </td>
+              <td class="py-3 px-4 pr-6 text-right">
+                <button class="text-gray-400 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-slate-700 dark:hover:text-blue-400 p-1.5 rounded-lg transition-all duration-300 inline-block active:scale-95">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                  </svg>
+                </button>
+              </td>
+            </tr>
+          } @empty {
+            <tr>
+              <td colspan="8" class="py-12 px-6 text-center text-gray-500 dark:text-slate-400">Nenhum produto cadastrado.</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pagination Footer -->
+    <div class="px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-gray-100 dark:border-slate-700 bg-gray-50/30 dark:bg-slate-800/50">
+      <div class="flex-1 w-full bg-gray-200 dark:bg-slate-700 h-2 rounded-full overflow-hidden shrink-0 mt-2 mb-4 hidden sm:block">
+        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 w-1/4 h-full rounded-full shadow-sm"></div>
+      </div>
+      <div class="flex items-center justify-between w-full">
+        <span class="text-sm text-gray-500 dark:text-slate-400">Showing 1 to 5 of 5 entries</span>
+        <div class="flex items-center gap-1.5">
+          <button class="w-8 h-8 flex items-center justify-center rounded-lg text-gray-500 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors active:scale-95 shadow-sm border border-transparent hover:border-gray-200 dark:hover:border-slate-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button class="w-8 h-8 flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium hover:from-blue-500 hover:to-indigo-500 transition-all shadow-md shadow-blue-500/20 active:scale-95 transform hover:-translate-y-0.5">
+            1
+          </button>
+          <button class="w-8 h-8 flex items-center justify-center rounded-lg text-gray-500 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors active:scale-95 shadow-sm border border-transparent hover:border-gray-200 dark:hover:border-slate-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Speed Dial FAB Setup -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col-reverse items-center gap-4 group">
+    <!-- Main FAB Button -->
+    <button class="w-14 h-14 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-500/40 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:shadow-blue-500/60 focus:outline-none focus:ring-4 focus:ring-blue-500/30 active:scale-95 ring-2 ring-white dark:ring-slate-800">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-500 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+    </button>
+    
+    <!-- Options Container -->
+    <div class="flex flex-col items-center gap-3 transition-all duration-300 opacity-0 translate-y-8 scale-75 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 group-hover:pointer-events-auto origin-bottom">
+      
+      <!-- Add Button -->
+      <button class="relative flex items-center group/tooltip p-3.5 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full shadow-lg shadow-cyan-500/30 hover:scale-110 hover:shadow-cyan-500/50 transition-all duration-300 active:scale-95 ring-2 ring-white dark:ring-slate-800" (click)="openCreateDialog()">
+        <span class="absolute right-full mr-4 px-3 py-1.5 bg-slate-800 dark:bg-slate-700 text-white text-xs font-semibold rounded-lg opacity-0 translate-x-3 group-hover/tooltip:opacity-100 group-hover/tooltip:translate-x-0 transition-all duration-300 whitespace-nowrap shadow-lg pointer-events-none">Novo Produto</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        </svg>
+      </button>
+
+      <!-- Export Button -->
+      <button class="relative flex items-center group/tooltip p-3.5 bg-white dark:bg-slate-700 rounded-full text-blue-600 dark:text-blue-400 shadow-md border border-gray-100 dark:border-slate-600 hover:scale-110 hover:bg-blue-50 dark:hover:bg-slate-600 transition-all duration-300 active:scale-95 ring-2 ring-white dark:ring-slate-800">
+        <span class="absolute right-full mr-4 px-3 py-1.5 bg-slate-800 dark:bg-slate-700 text-white text-xs font-semibold rounded-lg opacity-0 translate-x-3 group-hover/tooltip:opacity-100 group-hover/tooltip:translate-x-0 transition-all duration-300 whitespace-nowrap shadow-lg pointer-events-none">Exportar para Excel</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal Dialog -->
+  @if (isDialogOpen()) {
+    <div class="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm px-4 m-0 overflow-y-auto pt-10 pb-10">
+      <!-- Modal Container -->
+      <div class="bg-white dark:bg-slate-800 rounded-xl shadow-2xl w-full max-w-2xl overflow-hidden flex flex-col ring-1 ring-white/10 dark:ring-white/5 my-auto" (click)="$event.stopPropagation()">
+        <!-- Header -->
+        <div class="px-6 py-4 border-b border-gray-100 dark:border-slate-700 flex justify-between items-center bg-gray-50/50 dark:bg-slate-800/80 sticky top-0 z-10">
+          <h2 class="text-xl font-bold text-gray-800 dark:text-gray-100">
+            {{ dialogMode() === 'create' ? 'Novo Produto' : 'Editar Produto' }}
+          </h2>
+          <button class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors rounded-lg p-1 hover:bg-gray-100 dark:hover:bg-slate-700" (click)="closeDialog()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Body -->
+        <div class="p-6">
+          <form class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="col-span-1 sm:col-span-2">
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nome do Produto <span class="text-red-500">*</span></label>
+              <input type="text" [(ngModel)]="selectedProduto().nome" name="nome" class="w-full px-4 py-2 bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 rounded-lg text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all shadow-sm" placeholder="Ex: Notebook Dell XPS 15" required>
+            </div>
+            
+            <div class="col-span-1 sm:col-span-2">
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Descrição</label>
+              <textarea [(ngModel)]="selectedProduto().descricao" name="descricao" rows="2" class="w-full px-4 py-2 bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 rounded-lg text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all shadow-sm resize-none" placeholder="Detalhes do produto..."></textarea>
+            </div>
+            
+            <div>
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Categoria <span class="text-red-500">*</span></label>
+              <select [(ngModel)]="selectedProduto().categoriaId" name="categoriaId" class="w-full px-4 py-2 bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 rounded-lg text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all shadow-sm" required>
+                <option [ngValue]="undefined" disabled selected>Selecione uma categoria</option>
+                @for (cat of categorias(); track cat.id) {
+                  <option [value]="cat.id">{{ cat.nome }}</option>
+                }
+              </select>
+            </div>
+            
+            <div>
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Preço (R$) <span class="text-red-500">*</span></label>
+              <input type="number" [(ngModel)]="selectedProduto().preco" name="preco" step="0.01" min="0" class="w-full px-4 py-2 bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 rounded-lg text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all shadow-sm" required>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Estoque Inicial <span class="text-red-500">*</span></label>
+              <input type="number" [(ngModel)]="selectedProduto().quantidadeEstoque" name="quantidadeEstoque" min="0" class="w-full px-4 py-2 bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 rounded-lg text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all shadow-sm" required>
+            </div>
+            
+            <div class="flex items-center mt-6">
+              <label class="flex items-center gap-3 cursor-pointer group/switch">
+                <input type="checkbox" [(ngModel)]="selectedProduto().ativo" name="ativo" class="w-5 h-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500 dark:border-slate-600 dark:bg-slate-700 cursor-pointer shadow-sm">
+                <span class="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover/switch:text-gray-900 dark:group-hover/switch:text-white transition-colors">Produto Ativo no Sistema</span>
+              </label>
+            </div>
+          </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="px-6 py-4 border-t border-gray-100 dark:border-slate-700 bg-gray-50/50 dark:bg-slate-800/80 flex justify-between items-center sticky bottom-0 z-10">
+          @if (dialogMode() === 'edit') {
+            <button class="px-4 py-2 bg-red-50 text-red-600 hover:bg-red-100 dark:bg-red-500/10 dark:text-red-400 dark:hover:bg-red-500/20 rounded-lg font-medium transition-colors border border-red-200 dark:border-red-500/20" (click)="confirmDelete()">
+               Excluir
+            </button>
+          } @else {
+            <div></div> <!-- Spacing placeholder -->
+          }
+          <div class="flex gap-3">
+             @if (showSuccessMessage()) {
+                <span class="text-green-600 dark:text-green-400 font-medium text-sm flex items-center gap-1.5 animate-fade-in my-auto mr-2 bg-green-50 dark:bg-green-500/10 px-3 py-1.5 rounded-lg border border-green-200 dark:border-green-500/20">
+                  <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  Salvo com sucesso!
+                </span>
+             }
+            <button class="px-4 py-2 border border-gray-200 dark:border-slate-600 text-gray-600 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors font-medium hover:shadow-sm" (click)="closeDialog()">
+               {{ dialogMode() === 'create' ? 'Cancelar' : 'Fechar' }}
+            </button>
+            <button class="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg hover:from-blue-500 hover:to-indigo-500 transition-colors shadow-md shadow-blue-500/20 font-medium disabled:opacity-50" (click)="saveProduto()">
+               {{ dialogMode() === 'create' ? 'Salvar' : 'Atualizar' }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+
+  <!-- Delete Confirmation Modal -->
+  @if (showDeleteConfirm()) {
+    <div class="fixed inset-0 z-[110] flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fade-in px-4 m-0">
+      <div class="bg-white dark:bg-slate-800 rounded-xl shadow-2xl w-full max-w-sm overflow-hidden flex flex-col ring-1 ring-white/10 dark:ring-white/5" (click)="$event.stopPropagation()">
+        <div class="p-6 flex flex-col items-center text-center">
+          <div class="w-16 h-16 bg-red-100 dark:bg-red-500/20 rounded-full flex items-center justify-center mb-4 text-red-600 dark:text-red-500 shadow-inner">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Atenção!</h3>
+          <p class="text-sm text-gray-500 dark:text-slate-400 mb-6">
+            Você realmente deseja excluir esse item? Essa ação não poderá ser desfeita e os dados serão perdidos para sempre.
+          </p>
+          <div class="flex gap-3 w-full">
+            <button class="flex-1 px-4 py-2 border border-gray-200 dark:border-slate-600 text-gray-600 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors font-medium" (click)="cancelDelete()">Cancelar</button>
+            <button class="flex-1 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors shadow-md shadow-red-500/20 font-medium" (click)="deleteProduto()">Sim, excluir!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+</div>

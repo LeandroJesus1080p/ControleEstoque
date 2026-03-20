@@ -1,0 +1,15 @@
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\ControleEstoqueServices.csproj.AssemblyReference.cache
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\ControleEstoqueServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\ControleEstoqueServices.AssemblyInfoInputs.cache
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\ControleEstoqueServices.AssemblyInfo.cs
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\ControleEstoqueServices.csproj.CoreCompileInputs.cache
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\bin\Debug\net10.0\ControleEstoqueServices.deps.json
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\bin\Debug\net10.0\ControleEstoqueServices.dll
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\bin\Debug\net10.0\ControleEstoqueServices.pdb
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\bin\Debug\net10.0\ControleEstoqueModel.dll
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\bin\Debug\net10.0\ControleEstoqueModel.pdb
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\Controle.3709540C.Up2Date
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\ControleEstoqueServices.dll
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\refint\ControleEstoqueServices.dll
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\ControleEstoqueServices.pdb
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\ref\ControleEstoqueServices.dll

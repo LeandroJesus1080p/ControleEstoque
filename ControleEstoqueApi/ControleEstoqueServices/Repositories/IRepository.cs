@@ -1,0 +1,72 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using ControleEstoqueModel.Entities;
+using Microsoft.EntityFrameworkCore;
+
+namespace ControleEstoqueServices.Repositories
+{
+    public interface IRepository<T> where T : class
+    {
+        Task<IEnumerable<T>> GetAll();
+        Task<T> GetId(int id);
+        Task<T> Create(T data);
+        Task<T> Update(T data);
+        Task<T> Delete(int id);
+    }
+
+    public class Repository<T> : IRepository<T> where T : class
+    {
+        private readonly DatabaseContext _databaseContext;
+
+        public Repository(DatabaseContext databaseContext)
+        {
+            _databaseContext = databaseContext;
+        }
+
+        public virtual async Task<IEnumerable<T>> GetAll()
+        {
+            var data = await _databaseContext.Set<T>().ToListAsync();
+
+            // Retornar lista vazia quando não houver registros ao invés de lançar exceção.
+            if (data == null)
+                return new List<T>();
+
+            return data;
+        }
+
+        public virtual async Task<T> GetId(int id)
+        {
+            var data = await _databaseContext.Set<T>().FindAsync(id);
+
+            return data ?? throw new Exception("Registro não encontrado");
+        }
+
+        public virtual async Task<T> Create(T data)
+        {
+            await _databaseContext.Set<T>().AddAsync(data);
+            await SaveAsync();
+
+            return data;
+        }
+
+        public virtual async Task<T> Update(T data)
+        {
+            _databaseContext.Set<T>().Update(data);
+            await SaveAsync();
+
+            return data;
+        }
+
+        public virtual async Task<T> Delete(int id)
+        {
+            var data = await GetId(id);
+            _databaseContext.Set<T>().Remove(data);
+            await SaveAsync();
+
+            return data;
+        }
+
+        public virtual async Task<int> SaveAsync() => await _databaseContext.SaveChangesAsync();
+    }
+}

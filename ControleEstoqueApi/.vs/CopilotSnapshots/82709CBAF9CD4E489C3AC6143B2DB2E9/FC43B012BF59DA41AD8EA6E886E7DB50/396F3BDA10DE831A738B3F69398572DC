@@ -1,0 +1,59 @@
+﻿using ControleEstoqueModel.Entities;
+using Microsoft.EntityFrameworkCore;
+
+namespace ControleEstoqueServices.Repositories
+{
+    public interface IRepository<T> where T : class
+    {
+        Task<IEnumerable<T>> GetAll();
+        Task<T> GetId(int id);
+        Task<T> Create(T data);
+        Task<T> Update(T data);
+        Task<T> Delete(int id);
+    }
+    public class Repository<T>(DatabaseContext _databaseContext) : IRepository<T> where T : class
+    {
+        public virtual async Task<IEnumerable<T>> GetAll()
+        {
+            var data = await _databaseContext.Set<T>().ToListAsync()
+                ?? throw new Exception("Nenhum registro encontrado");
+
+            return data;
+        }
+
+        public virtual async Task<T> GetId(int id)
+        {
+            var data = await _databaseContext.Set<T>().FindAsync(id)
+                ?? throw new Exception("Registro não encontrado");
+
+            return data;
+        }
+        public virtual async Task<T> Create(T data)
+        {
+            await _databaseContext.Set<T>().AddAsync(data);
+            await SaveAsync();
+
+            return data;
+        }
+
+        public virtual async Task<T> Update(T data)
+        {
+            _databaseContext.Set<T>().Update(data);
+            await SaveAsync();
+
+            return data;
+        }
+
+        public virtual async Task<T> Delete(int id)
+        {
+            var data = await GetId(id);
+            _databaseContext.Set<T>().Remove(data);
+            await SaveAsync();
+
+            return data;
+        }
+
+        public virtual async Task<int> SaveAsync() => 
+            await _databaseContext.SaveChangesAsync();
+    }
+}

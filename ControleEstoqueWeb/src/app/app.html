@@ -1,0 +1,148 @@
+@if (isLoginPage()) {
+  <router-outlet></router-outlet>
+} @else {
+<div class="flex h-screen bg-[#f2f4f7] dark:bg-slate-900 text-gray-800 dark:text-gray-200 font-sans overflow-hidden transition-colors duration-200">
+  <!-- Sidebar -->
+  <aside 
+    class="bg-white dark:bg-slate-800 border-r border-gray-200 dark:border-slate-700 flex flex-col transition-all duration-300 ease-in-out relative z-20 shrink-0"
+    [class.w-[260px]]="isSidebarOpen()"
+    [class.w-[80px]]="!isSidebarOpen()">
+    
+    <!-- Logo area -->
+    <div class="h-16 flex items-center px-4 border-b border-gray-100 dark:border-slate-700 shrink-0" 
+         [class.justify-start]="isSidebarOpen()"
+         [class.justify-center]="!isSidebarOpen()">
+      <div class="flex items-center gap-2 overflow-hidden whitespace-nowrap">
+        <!-- Ícone similar ao EduDash -->
+        <div class="flex items-center justify-center relative">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-orange-500">
+            <path d="M12 4L4 8L12 12L20 8L12 4Z" fill="currentColor"/>
+            <path d="M4 12L12 16L20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M4 16L12 20L20 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        @if(isSidebarOpen()) {
+          <span class="font-bold text-xl tracking-tight text-gray-900 dark:text-white">EstoquePro</span>
+        }
+      </div>
+    </div>
+
+    <div class="flex-1 overflow-y-auto overflow-x-hidden no-scrollbar pb-6">
+      <!-- User profile block -->
+      @if(isSidebarOpen()) {
+        <div class="mx-4 mt-6 p-3 bg-gray-50 dark:bg-slate-700/50 rounded-xl flex items-center gap-3 border border-gray-100 dark:border-slate-600/50">
+          <div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center shrink-0">
+            <span class="font-bold text-blue-600 dark:text-blue-400">LC</span>
+          </div>
+          <div class="flex flex-col overflow-hidden">
+            <span class="font-semibold text-sm text-gray-900 dark:text-white truncate">Leandro C.</span>
+            <span class="text-xs text-gray-500 dark:text-gray-400 truncate">Admin</span>
+          </div>
+          <button class="ml-auto text-gray-400 hover:text-gray-600 dark:hover:text-gray-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      } @else {
+        <div class="mx-auto mt-6 w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center shrink-0">
+          <span class="font-bold text-blue-600 dark:text-blue-400">LC</span>
+        </div>
+      }
+
+      <!-- Navigation -->
+      <nav class="mt-6 px-3 space-y-1 w-full">
+        <!-- Produtos -->
+        <a routerLink="/produtos" 
+           routerLinkActive="!text-slate-900 dark:!text-white bg-slate-200 dark:bg-slate-700 font-bold shadow-sm"
+           class="flex items-center justify-between px-3 py-2.5 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-700/50 hover:text-gray-900 dark:hover:text-gray-200 transition-colors group">
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 min-w-[20px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            </svg>
+            <span class="font-semibold text-sm transition-opacity duration-300" [class.opacity-0]="!isSidebarOpen()" [class.hidden]="!isSidebarOpen()">Produtos</span>
+          </div>
+          @if(isSidebarOpen()) {
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+          }
+        </a>
+
+        <!-- Categorias -->
+        <a routerLink="/categorias" 
+           routerLinkActive="!text-slate-900 dark:!text-white bg-slate-200 dark:bg-slate-700 font-bold shadow-sm" 
+           class="flex items-center justify-between px-3 py-2.5 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-700/50 hover:text-gray-900 dark:hover:text-gray-200 transition-colors group">
+           <div class="flex items-center gap-3">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 min-w-[20px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+             </svg>
+             <span class="font-semibold text-sm transition-opacity duration-300" [class.opacity-0]="!isSidebarOpen()" [class.hidden]="!isSidebarOpen()">Categorias</span>
+           </div>
+           @if(isSidebarOpen()) {
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+           }
+        </a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Main Content wrapper -->
+  <div class="flex-1 flex flex-col min-w-0 overflow-hidden bg-[#f0f3f6] dark:bg-slate-900/50">
+    <!-- Top Navbar -->
+    <header class="h-16 bg-white dark:bg-slate-800 border-b border-gray-200 dark:border-slate-700 flex items-center justify-between px-6 shrink-0 z-10 w-full transition-colors duration-200">
+      
+      <!-- Left items -->
+      <div class="flex items-center flex-1">
+        <!-- Toggle Sidebar Button -->
+        <button (click)="toggleSidebar()" class="p-2 -ml-2 rounded-md text-gray-400 hover:text-gray-600 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-slate-700 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Right icons -->
+      <div class="flex items-center gap-3">
+        <!-- Theme toggle -->
+        <button (click)="toggleTheme()" class="w-9 h-9 rounded-full bg-gray-50 dark:bg-slate-700 flex items-center justify-center text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-600 transition-colors">
+          @if(!isDarkMode()) {
+            <!-- Moon icon representing dark mode activate -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          } @else {
+            <!-- Sun icon representing light mode activate -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          }
+        </button>
+        <!-- Language -->
+        <button class="w-9 h-9 rounded-full bg-gray-50 dark:bg-slate-700 flex items-center justify-center text-gray-500 hover:bg-gray-100 dark:hover:bg-slate-600 transition-colors overflow-hidden">
+          <img src="https://flagcdn.com/w40/us.png" alt="English" class="w-5 h-5 object-cover rounded-full border border-gray-200 dark:border-slate-600" />
+        </button>
+        <!-- Notifications -->
+        <button class="w-9 h-9 rounded-full bg-gray-50 dark:bg-slate-700 flex items-center justify-center text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-600 transition-colors relative">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+          </svg>
+          <span class="absolute top-2 right-2.5 w-1.5 h-1.5 bg-red-500 rounded-full"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Page Content Container -->
+    <main class="flex-1 overflow-y-auto w-full p-4 sm:p-6">
+      <router-outlet></router-outlet>
+      
+      <!-- Footer -->
+      <footer class="text-center py-6 text-sm text-gray-500 dark:text-gray-400 flex items-center justify-center gap-1 w-full mt-auto">
+        <span>© 2026 Made With</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-500 fill-current" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+        </svg>
+        <span>by Antigravity.</span>
+      </footer>
+    </main>
+  </div>
+</div>
+}

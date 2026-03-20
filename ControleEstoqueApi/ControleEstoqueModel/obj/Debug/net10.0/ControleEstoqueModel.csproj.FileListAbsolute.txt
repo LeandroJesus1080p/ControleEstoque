@@ -1,0 +1,14 @@
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\bin\Debug\net10.0\ControleEstoqueModel.deps.json
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\bin\Debug\net10.0\ControleEstoqueModel.runtimeconfig.json
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\bin\Debug\net10.0\ControleEstoqueModel.dll
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\bin\Debug\net10.0\ControleEstoqueModel.pdb
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\obj\Debug\net10.0\ControleEstoqueModel.csproj.AssemblyReference.cache
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\obj\Debug\net10.0\ControleEstoqueModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\obj\Debug\net10.0\ControleEstoqueModel.AssemblyInfoInputs.cache
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\obj\Debug\net10.0\ControleEstoqueModel.AssemblyInfo.cs
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\obj\Debug\net10.0\ControleEstoqueModel.csproj.CoreCompileInputs.cache
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\obj\Debug\net10.0\ControleEstoqueModel.dll
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\obj\Debug\net10.0\refint\ControleEstoqueModel.dll
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\obj\Debug\net10.0\ControleEstoqueModel.pdb
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\obj\Debug\net10.0\ControleEstoqueModel.genruntimeconfig.cache
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueModel\obj\Debug\net10.0\ref\ControleEstoqueModel.dll
