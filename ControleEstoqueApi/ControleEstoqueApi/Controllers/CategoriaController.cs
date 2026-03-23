@@ -1,6 +1,7 @@
 ﻿using ControleEstoqueModel.Entities;
 using ControleEstoqueServices.CategoriaServices;
 using ControleEstoqueServices.ProdutoServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +17,8 @@ namespace ControleEstoqueApi.Controllers
         {
             _service = service;
         }
+
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> Get()
         {

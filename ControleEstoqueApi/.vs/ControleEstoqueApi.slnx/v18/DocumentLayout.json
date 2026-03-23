@@ -3,60 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{020546FB-913E-4A6C-AD2D-354231570796}|ControleEstoqueApi\\ControleEstoqueApi.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020546FB-913E-4A6C-AD2D-354231570796}|ControleEstoqueApi\\ControleEstoqueApi.csproj|solutionrelative:controleestoqueapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|solutionrelative:controleestoqueapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{020546FB-913E-4A6C-AD2D-354231570796}|ControleEstoqueApi\\ControleEstoqueApi.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueapi\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020546FB-913E-4A6C-AD2D-354231570796}|ControleEstoqueApi\\ControleEstoqueApi.csproj|solutionrelative:controleestoqueapi\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|solutionrelative:controleestoqueapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B76339C8-D228-4E86-A9DC-89B82D763B20}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B76339C8-D228-4E86-A9DC-89B82D763B20}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueapi\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|solutionrelative:controleestoqueapi\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B76339C8-D228-4E86-A9DC-89B82D763B20}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\entities\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B76339C8-D228-4E86-A9DC-89B82D763B20}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\entities\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|solutionrelative:controleestoqueapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B76339C8-D228-4E86-A9DC-89B82D763B20}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\controleestoquemodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B76339C8-D228-4E86-A9DC-89B82D763B20}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\controleestoquemodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\entities\\mvvm\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\entities\\mvvm\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{020546FB-913E-4A6C-AD2D-354231570796}|ControleEstoqueApi\\ControleEstoqueApi.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020546FB-913E-4A6C-AD2D-354231570796}|ControleEstoqueApi\\ControleEstoqueApi.csproj|solutionrelative:controleestoqueapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|solutionrelative:controleestoqueapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29286CD2-9DAD-4828-BE14-63D16736BECA}|ControleEstoqueServices\\ControleEstoqueServices.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueservices\\categoriaservices\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29286CD2-9DAD-4828-BE14-63D16736BECA}|ControleEstoqueServices\\ControleEstoqueServices.csproj|solutionrelative:controleestoqueservices\\categoriaservices\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AC231AE-3AF3-DCDD-E900-DA40EBE1EF71}|ControleEstoqueServices\\ControleEstoqueServices.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueservices\\authservices\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC231AE-3AF3-DCDD-E900-DA40EBE1EF71}|ControleEstoqueServices\\ControleEstoqueServices.csproj|solutionrelative:controleestoqueservices\\authservices\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29286CD2-9DAD-4828-BE14-63D16736BECA}|ControleEstoqueServices\\ControleEstoqueServices.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueservices\\produtoservices\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29286CD2-9DAD-4828-BE14-63D16736BECA}|ControleEstoqueServices\\ControleEstoqueServices.csproj|solutionrelative:controleestoqueservices\\produtoservices\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|solutionrelative:controleestoqueapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29286CD2-9DAD-4828-BE14-63D16736BECA}|ControleEstoqueServices\\ControleEstoqueServices.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueservices\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29286CD2-9DAD-4828-BE14-63D16736BECA}|ControleEstoqueServices\\ControleEstoqueServices.csproj|solutionrelative:controleestoqueservices\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AC231AE-3AF3-DCDD-E900-DA40EBE1EF71}|ControleEstoqueServices\\ControleEstoqueServices.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueservices\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC231AE-3AF3-DCDD-E900-DA40EBE1EF71}|ControleEstoqueServices\\ControleEstoqueServices.csproj|solutionrelative:controleestoqueservices\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{020546FB-913E-4A6C-AD2D-354231570796}|ControleEstoqueApi\\ControleEstoqueApi.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{020546FB-913E-4A6C-AD2D-354231570796}|ControleEstoqueApi\\ControleEstoqueApi.csproj|solutionrelative:controleestoqueapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF2723B7-D070-FD2C-DF4C-9EED9F7BF656}|ControleEstoqueApi\\ControleEstoqueApi.csproj|solutionrelative:controleestoqueapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{020546FB-913E-4A6C-AD2D-354231570796}|ControleEstoqueApi\\ControleEstoqueApi.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{020546FB-913E-4A6C-AD2D-354231570796}|ControleEstoqueApi\\ControleEstoqueApi.csproj|solutionrelative:controleestoqueapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\controleestoquemodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\controleestoquemodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B76339C8-D228-4E86-A9DC-89B82D763B20}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\entities\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B76339C8-D228-4E86-A9DC-89B82D763B20}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\entities\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AC231AE-3AF3-DCDD-E900-DA40EBE1EF71}|ControleEstoqueServices\\ControleEstoqueServices.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueservices\\categoriaservices\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC231AE-3AF3-DCDD-E900-DA40EBE1EF71}|ControleEstoqueServices\\ControleEstoqueServices.csproj|solutionrelative:controleestoqueservices\\categoriaservices\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B76339C8-D228-4E86-A9DC-89B82D763B20}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\entities\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B76339C8-D228-4E86-A9DC-89B82D763B20}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\entities\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\entities\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\entities\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B76339C8-D228-4E86-A9DC-89B82D763B20}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B76339C8-D228-4E86-A9DC-89B82D763B20}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AC231AE-3AF3-DCDD-E900-DA40EBE1EF71}|ControleEstoqueServices\\ControleEstoqueServices.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoqueservices\\produtoservices\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC231AE-3AF3-DCDD-E900-DA40EBE1EF71}|ControleEstoqueServices\\ControleEstoqueServices.csproj|solutionrelative:controleestoqueservices\\produtoservices\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\entities\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\entities\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\entities\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\entities\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|c:\\users\\leand\\desktop\\projetos\\controle de estoque\\controleestoqueapi\\controleestoquemodel\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14341CC9-0617-8F72-36E1-EC5D96E05540}|ControleEstoqueModel\\ControleEstoqueModel.csproj|solutionrelative:controleestoquemodel\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,33 +94,95 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ControleEstoqueModel",
-              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueModel\\ControleEstoqueModel.csproj",
-              "RelativeDocumentMoniker": "ControleEstoqueModel\\ControleEstoqueModel.csproj",
-              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueModel\\ControleEstoqueModel.csproj",
-              "RelativeToolTip": "ControleEstoqueModel\\ControleEstoqueModel.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-20T16:15:11.329Z",
+              "DocumentIndex": 18,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueModel\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "ControleEstoqueModel\\Entities\\Employee.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueModel\\Entities\\Employee.cs",
+              "RelativeToolTip": "ControleEstoqueModel\\Entities\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T17:37:33.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueApi\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "ControleEstoqueApi\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueApi\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "ControleEstoqueApi\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T17:33:04.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueModel\\Entities\\mvvm\\EmployeeViewModel.cs",
+              "RelativeDocumentMoniker": "ControleEstoqueModel\\Entities\\mvvm\\EmployeeViewModel.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueModel\\Entities\\mvvm\\EmployeeViewModel.cs",
+              "RelativeToolTip": "ControleEstoqueModel\\Entities\\mvvm\\EmployeeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T17:30:14.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueServices\\AuthServices\\AuthService.cs",
+              "RelativeDocumentMoniker": "ControleEstoqueServices\\AuthServices\\AuthService.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueServices\\AuthServices\\AuthService.cs",
+              "RelativeToolTip": "ControleEstoqueServices\\AuthServices\\AuthService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvw0AAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T20:07:29.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ControleEstoqueApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ControleEstoqueApi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T20:06:01.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ControleEstoqueModel.csproj",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueModel\\ControleEstoqueModel.csproj",
+              "RelativeDocumentMoniker": "ControleEstoqueModel\\ControleEstoqueModel.csproj",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueModel\\ControleEstoqueModel.csproj",
+              "RelativeToolTip": "ControleEstoqueModel\\ControleEstoqueModel.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-20T16:15:11.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CategoriaController.cs",
               "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueApi\\Controllers\\CategoriaController.cs",
               "RelativeDocumentMoniker": "ControleEstoqueApi\\Controllers\\CategoriaController.cs",
               "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueApi\\Controllers\\CategoriaController.cs",
               "RelativeToolTip": "ControleEstoqueApi\\Controllers\\CategoriaController.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAAAFwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T20:08:10.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "CategoriaService.cs",
               "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueServices\\CategoriaServices\\CategoriaService.cs",
               "RelativeDocumentMoniker": "ControleEstoqueServices\\CategoriaServices\\CategoriaService.cs",
@@ -108,12 +190,11 @@
               "RelativeToolTip": "ControleEstoqueServices\\CategoriaServices\\CategoriaService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T20:03:04.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T20:03:04.444Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Produtos.cs",
               "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueModel\\Entities\\Produtos.cs",
               "RelativeDocumentMoniker": "ControleEstoqueModel\\Entities\\Produtos.cs",
@@ -121,25 +202,24 @@
               "RelativeToolTip": "ControleEstoqueModel\\Entities\\Produtos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T19:41:49.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T19:41:49.657Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProdutoController.cs",
               "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueApi\\Controllers\\ProdutoController.cs",
               "RelativeDocumentMoniker": "ControleEstoqueApi\\Controllers\\ProdutoController.cs",
               "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueApi\\Controllers\\ProdutoController.cs",
               "RelativeToolTip": "ControleEstoqueApi\\Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wBwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T19:10:11.202Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "ProdutoService.cs",
               "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueServices\\ProdutoServices\\ProdutoService.cs",
               "RelativeDocumentMoniker": "ControleEstoqueServices\\ProdutoServices\\ProdutoService.cs",
@@ -147,8 +227,7 @@
               "RelativeToolTip": "ControleEstoqueServices\\ProdutoServices\\ProdutoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T18:57:30.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T18:57:30.721Z"
             },
             {
               "$type": "Document",
@@ -160,8 +239,7 @@
               "RelativeToolTip": "ControleEstoqueServices\\Repositories\\IRepository.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAASwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T18:29:07.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T18:29:07.338Z"
             },
             {
               "$type": "Document",
@@ -173,12 +251,11 @@
               "RelativeToolTip": "ControleEstoqueApi\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-19T18:21:43.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T18:21:43.207Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueApi\\appsettings.json",
               "RelativeDocumentMoniker": "ControleEstoqueApi\\appsettings.json",
@@ -191,20 +268,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueApi\\Program.cs",
               "RelativeDocumentMoniker": "ControleEstoqueApi\\Program.cs",
               "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueApi\\Program.cs",
               "RelativeToolTip": "ControleEstoqueApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T18:19:51.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueModel\\Entities\\Usuario.cs",
               "RelativeDocumentMoniker": "ControleEstoqueModel\\Entities\\Usuario.cs",
@@ -212,12 +289,11 @@
               "RelativeToolTip": "ControleEstoqueModel\\Entities\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T18:18:01.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T18:18:01.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "DatabaseContext.cs",
               "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueModel\\Entities\\DatabaseContext.cs",
               "RelativeDocumentMoniker": "ControleEstoqueModel\\Entities\\DatabaseContext.cs",
@@ -225,12 +301,11 @@
               "RelativeToolTip": "ControleEstoqueModel\\Entities\\DatabaseContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T14:51:18.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T14:51:18.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueModel\\Entities\\Categoria.cs",
               "RelativeDocumentMoniker": "ControleEstoqueModel\\Entities\\Categoria.cs",
@@ -238,12 +313,11 @@
               "RelativeToolTip": "ControleEstoqueModel\\Entities\\Categoria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T14:47:44.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T14:47:44.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "Table.cs",
               "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Controle de estoque\\ControleEstoqueApi\\ControleEstoqueModel\\Entities\\Table.cs",
               "RelativeDocumentMoniker": "ControleEstoqueModel\\Entities\\Table.cs",
@@ -251,8 +325,7 @@
               "RelativeToolTip": "ControleEstoqueModel\\Entities\\Table.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T14:39:56.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T14:39:56.952Z"
             }
           ]
         }

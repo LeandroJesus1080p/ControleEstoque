@@ -13,3 +13,4 @@ C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleE
 C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\refint\ControleEstoqueServices.dll
 C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\ControleEstoqueServices.pdb
 C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\ref\ControleEstoqueServices.dll
+C:\Users\leand\Desktop\Projetos\Controle de estoque\ControleEstoqueApi\ControleEstoqueServices\obj\Debug\net10.0\ControleEstoqueServices.sourcelink.json

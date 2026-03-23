@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { ProdutoService } from '../services/produto.service';
 import { CategoriaService } from '../services/categoria.service';
 import { Produto, Categoria } from '../models/models';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-produtos',
@@ -14,6 +16,7 @@ import { Produto, Categoria } from '../models/models';
 export class Produtos implements OnInit {
   private produtoService = inject(ProdutoService);
   private categoriaService = inject(CategoriaService);
+  private http = inject(HttpClient);
   activeFilter = signal<string | null>(null);
   loading = signal<boolean>(true);
 
@@ -26,6 +29,14 @@ export class Produtos implements OnInit {
   selectedProduto = signal<Partial<Produto>>({});
   showDeleteConfirm = signal<boolean>(false);
   showSuccessMessage = signal<boolean>(false);
+  
+  // Upload Test State
+  activeTab = signal<'info' | 'upload'>('info');
+  uploadName = signal<string>('');
+  uploadAge = signal<number>(0);
+  selectedFile = signal<File | null>(null);
+  uploading = signal<boolean>(false);
+  uploadSuccess = signal<boolean>(false);
 
   ngOnInit() {
     this.categoriaService.getCategorias().subscribe({
@@ -52,6 +63,7 @@ export class Produtos implements OnInit {
 
   openCreateDialog() {
     this.dialogMode.set('create');
+    this.activeTab.set('info');
     // Format required date string for type consistency or leave empty
     this.selectedProduto.set({ ativo: true, quantidadeEstoque: 0, preco: 0 });
     this.isDialogOpen.set(true);
@@ -60,6 +72,7 @@ export class Produtos implements OnInit {
   openEditDialog(produto: Produto, event?: Event) {
     if (event) event.stopPropagation();
     this.dialogMode.set('edit');
+    this.activeTab.set('info');
     this.selectedProduto.set({ ...produto });
     this.isDialogOpen.set(true);
   }
@@ -68,6 +81,11 @@ export class Produtos implements OnInit {
     this.isDialogOpen.set(false);
     this.showDeleteConfirm.set(false);
     this.showSuccessMessage.set(false);
+    this.activeTab.set('info');
+    this.uploadName.set('');
+    this.uploadAge.set(0);
+    this.selectedFile.set(null);
+    this.uploadSuccess.set(false);
   }
 
   confirmDelete() {
@@ -143,5 +161,43 @@ export class Produtos implements OnInit {
 
   stopPropagation(event: Event) {
     event.stopPropagation();
+  }
+
+  onFileSelected(event: any) {
+    const file: File = event.target.files[0];
+    if (file) {
+      this.selectedFile.set(file);
+    } else {
+      this.selectedFile.set(null);
+    }
+    this.uploadSuccess.set(false);
+  }
+
+  testUpload() {
+    const file = this.selectedFile();
+    if (!file) return;
+
+    this.uploading.set(true);
+    this.uploadSuccess.set(false);
+
+    const formData = new FormData();
+    formData.append('Name', this.uploadName());
+    formData.append('Age', this.uploadAge().toString());
+    formData.append('Photo', file);
+
+    this.http.post(`${environment.apiUrl}/Employee`, formData).subscribe({
+      next: (res) => {
+        this.uploading.set(false);
+        this.uploadSuccess.set(true);
+        this.selectedFile.set(null);
+        this.uploadName.set('');
+        this.uploadAge.set(0);
+      },
+      error: (err) => {
+        console.error('Erro no upload de teste', err);
+        this.uploading.set(false);
+        alert('Ocorreu um erro no upload!');
+      }
+    });
   }
 }
